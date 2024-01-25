@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import Fetch from './Components/Fetch'
+import AddDo from './Components/AddDo'
 import './App.css'
 
 function App() {
@@ -8,7 +8,8 @@ function App() {
   return (
     <>
       <div>
-        <Fetch/>
+        <h1>My to do List</h1>
+        <AddDo/>
         </div>
     </>
   )
