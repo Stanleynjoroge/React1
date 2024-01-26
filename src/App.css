@@ -1,0 +1,48 @@
+#root {
+  display: flex;
+  flex-direction: column;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+ 
+  place-items: center;
+
+}
+.bar{
+  display: flex;
+  border-radius: 10px;
+  border: 2px solid black;
+}
+.Progress{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-radius: 10px;
+  
+}
+.main{
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  padding-top: 20px;
+  place-items: center;
+  gap: 1rem;
+  background-color: aliceblue;
+  width: 450px;
+
+}
+#input{
+    width: 40px;
+    height: 30px;
+    border-radius: 10px;
+
+}
+.input{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+  align-self: center;
+  padding-left:13rem;
+}
