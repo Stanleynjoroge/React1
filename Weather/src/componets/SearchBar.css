@@ -1,0 +1,10 @@
+.main{
+    display: flex;
+    flex-direction: column;
+    border: 0px;
+    padding: 10px;
+    justify-content: center;
+    align-content: center;
+    background-image: url(../assets/background.jpg);
+    width: max-content;
+}
