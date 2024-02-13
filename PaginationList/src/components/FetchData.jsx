@@ -1,9 +1,11 @@
 import React, { useContext, useState, useEffect } from "react";
 import { NavLink } from "react-router-dom";
 import "./FetchData.css";
+import { ThemeContext } from "./ThemeContextData";
 
 const FetchData = () => {
   const [data, setData] = useState(null);
+  
 
   useEffect(() => {
     fetchAPI();
@@ -24,7 +26,10 @@ const FetchData = () => {
   };
 
   return (
-    <div className="main">
+   
+<>
+
+    
       {data &&
         data.products.slice(0, 16).map((product) => (
           <div id={product.id} className="product" key={product.id}>
@@ -35,11 +40,9 @@ const FetchData = () => {
             <p>{product.title}</p>
           </div>
         ))}
-      {/* <NavLink
-                    to={`/product/${product.id}`}>
-                   
-                  </NavLink> */}
-    </div>
+   
+   </>
+    
   );
 };
 

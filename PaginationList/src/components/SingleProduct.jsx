@@ -1,6 +1,7 @@
 import React, { useContext } from "react";
 import { useLoaderData } from "react-router-dom";
 
+
 export const productLoader = async ({ params }) => {
   const response = await fetch(`https://dummyjson.com/products/${params.productId}`);
   const data = await response.json();

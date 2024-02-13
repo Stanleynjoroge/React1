@@ -7,6 +7,7 @@ import ErrorPage from "./Routes/errorpage";
 import FetchData from "./components/FetchData.jsx";
 import App from "./App.jsx";
 import SingleProduct, { productLoader} from "./components/SingleProduct.jsx";
+import ThemeContextProvider from "./components/ThemeContextData.jsx";
 
 const router = createBrowserRouter([
   {
@@ -35,6 +36,9 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <ThemeContextProvider>
     <RouterProvider router={router} />
+    </ThemeContextProvider>
+    
   </React.StrictMode>
 );
