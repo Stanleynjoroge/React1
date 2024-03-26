@@ -1,0 +1,12 @@
+
+.product{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: none;
+}
+img{
+    background-attachment: none;
+    background: none;
+    background-color: none;
+}

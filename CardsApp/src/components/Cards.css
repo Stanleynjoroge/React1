@@ -1,0 +1,21 @@
+img{
+    width: 100px;
+    height: 100px;
+}
+.main{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content:  space-between;
+width: 80%;
+flex-wrap: wrap;
+background-color: aliceblue;
+gap: 4rem;
+place-self: center;
+
+}
+.cats{
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}
